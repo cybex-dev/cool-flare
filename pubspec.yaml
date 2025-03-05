@@ -2,6 +2,14 @@ name: cool_flare
 description: Vector design and runtime animation for Flutter (replacement for flare_flutter).
 version: 3.0.2
 homepage: https://github.com/cybex-dev/cool-flare
+repository: https://github.com/cybex-dev/cool-flare
+issue_tracker: https://github.com/cybex-dev/cool-flare/issues
+topics:
+  - animation
+  - design
+  - flare
+  - rive
+  - vector
 
 dependencies:
   collection: ^1.19.0
