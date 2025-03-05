@@ -10,7 +10,9 @@ Generated.xcconfig
 /example/simple/ios/Flutter/flutter_export_environment.sh
 /example/change_color/ios/Flutter/Flutter.podspec
 /example/favorite/ios/Flutter/Flutter.podspec
-/flare_flutter/ios/Flutter
+/ios/Flutter
 /example/change_color/assets/change_color_example.flr
 
 flutter_export_environment.sh
+
+.idea/
