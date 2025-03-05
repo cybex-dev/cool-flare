@@ -25,7 +25,7 @@ class AssetFlare extends AssetProvider {
   int get hashCode => Object.hash(bundle, name);
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     if (other.runtimeType != runtimeType) {
       return false;
     }
