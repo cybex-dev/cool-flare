@@ -1,4 +1,3 @@
-import 'package:cool_flare/base/math/mat2d.dart';
 import 'package:flutter/foundation.dart';
 
 import 'flare.dart';

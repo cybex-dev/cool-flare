@@ -1,8 +1,5 @@
 import 'dart:math';
 
-import 'package:cool_flare/base/animation/actor_animation.dart';
-import 'package:cool_flare/base/math/mat2d.dart';
-
 import 'flare.dart';
 import 'flare_actor.dart';
 import 'flare_controller.dart';

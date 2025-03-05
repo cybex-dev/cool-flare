@@ -1,5 +1,7 @@
 library flare_flutter;
 
+// ignore_for_file: deprecated_member_use
+
 import 'dart:async';
 import 'dart:math';
 import 'dart:typed_data';

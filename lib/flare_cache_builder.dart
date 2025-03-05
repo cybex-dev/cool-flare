@@ -1,7 +1,6 @@
 import 'package:cool_flare/asset_provider.dart';
 import 'package:cool_flare/flare_cache.dart';
 import 'package:cool_flare/flare_cache_asset.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 
 /// Create a mobile or tablet layout depending on the screen size.

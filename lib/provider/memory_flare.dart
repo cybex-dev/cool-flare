@@ -1,5 +1,3 @@
-import 'dart:typed_data';
-
 import 'package:cool_flare/asset_provider.dart';
 import 'package:flutter/foundation.dart';
 
@@ -15,7 +13,7 @@ class MemoryFlare extends AssetProvider {
   int get hashCode => bytes.hashCode;
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     if (other.runtimeType != runtimeType) {
       return false;
     }
