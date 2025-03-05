@@ -1,5 +1,5 @@
-import 'package:flare_flutter/flare_actor.dart';
-import 'package:flare_flutter/flare_controller.dart';
+import 'package:cool_flare/flare_actor.dart';
+import 'package:cool_flare/flare_controller.dart';
 import 'package:flutter/material.dart';
 
 class LoginCharacter extends StatelessWidget {

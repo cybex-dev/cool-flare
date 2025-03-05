@@ -2,7 +2,7 @@ import 'dart:collection';
 import 'dart:convert';
 import 'dart:typed_data';
 
-import 'package:flare_flutter/base/stream_reader.dart';
+import 'package:cool_flare/base/stream_reader.dart';
 
 abstract class JSONReader implements StreamReader {
   final dynamic _readObject;

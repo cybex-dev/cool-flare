@@ -1,11 +1,11 @@
-import 'package:flare_flutter/base/actor_artboard.dart';
-import 'package:flare_flutter/base/actor_component.dart';
-import 'package:flare_flutter/base/actor_constraint.dart';
-import 'package:flare_flutter/base/actor_flags.dart';
-import 'package:flare_flutter/base/actor_layer_effect_renderer.dart';
-import 'package:flare_flutter/base/math/mat2d.dart';
-import 'package:flare_flutter/base/math/vec2d.dart';
-import 'package:flare_flutter/base/stream_reader.dart';
+import 'package:cool_flare/base/actor_artboard.dart';
+import 'package:cool_flare/base/actor_component.dart';
+import 'package:cool_flare/base/actor_constraint.dart';
+import 'package:cool_flare/base/actor_flags.dart';
+import 'package:cool_flare/base/actor_layer_effect_renderer.dart';
+import 'package:cool_flare/base/math/mat2d.dart';
+import 'package:cool_flare/base/math/vec2d.dart';
+import 'package:cool_flare/base/stream_reader.dart';
 
 typedef bool ComponentWalkCallback(ActorComponent component);
 

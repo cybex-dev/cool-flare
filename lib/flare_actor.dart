@@ -1,17 +1,17 @@
 import 'dart:math';
 import 'dart:typed_data';
 
-import 'package:flare_flutter/asset_provider.dart';
-import 'package:flare_flutter/base/actor_drawable.dart';
-import 'package:flare_flutter/base/actor_node.dart';
-import 'package:flare_flutter/base/animation/actor_animation.dart';
-import 'package:flare_flutter/base/math/aabb.dart';
-import 'package:flare_flutter/base/math/mat2d.dart';
-import 'package:flare_flutter/flare.dart';
-import 'package:flare_flutter/flare_controller.dart';
-import 'package:flare_flutter/flare_render_box.dart';
-import 'package:flare_flutter/provider/asset_flare.dart';
-import 'package:flare_flutter/provider/memory_flare.dart';
+import 'package:cool_flare/asset_provider.dart';
+import 'package:cool_flare/base/actor_drawable.dart';
+import 'package:cool_flare/base/actor_node.dart';
+import 'package:cool_flare/base/animation/actor_animation.dart';
+import 'package:cool_flare/base/math/aabb.dart';
+import 'package:cool_flare/base/math/mat2d.dart';
+import 'package:cool_flare/flare.dart';
+import 'package:cool_flare/flare_controller.dart';
+import 'package:cool_flare/flare_render_box.dart';
+import 'package:cool_flare/provider/asset_flare.dart';
+import 'package:cool_flare/provider/memory_flare.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 

@@ -1,12 +1,12 @@
 import 'dart:math';
 
-import 'package:flare_flutter/asset_provider.dart';
-import 'package:flare_flutter/base/math/aabb.dart';
-import 'package:flare_flutter/base/math/mat2d.dart';
-import 'package:flare_flutter/base/math/vec2d.dart';
-import 'package:flare_flutter/flare.dart';
-import 'package:flare_flutter/flare_cache.dart';
-import 'package:flare_flutter/flare_cache_asset.dart';
+import 'package:cool_flare/asset_provider.dart';
+import 'package:cool_flare/base/math/aabb.dart';
+import 'package:cool_flare/base/math/mat2d.dart';
+import 'package:cool_flare/base/math/vec2d.dart';
+import 'package:cool_flare/flare.dart';
+import 'package:cool_flare/flare_cache.dart';
+import 'package:cool_flare/flare_cache_asset.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/scheduler.dart';

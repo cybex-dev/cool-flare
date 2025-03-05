@@ -1,8 +1,8 @@
-import 'package:flare_flutter/flare.dart';
-import 'package:flare_flutter/flare_actor.dart';
-import 'package:flare_flutter/flare_cache.dart';
-import 'package:flare_flutter/flare_controller.dart';
-import 'package:flare_flutter/provider/asset_flare.dart';
+import 'package:cool_flare/flare.dart';
+import 'package:cool_flare/flare_actor.dart';
+import 'package:cool_flare/flare_cache.dart';
+import 'package:cool_flare/flare_controller.dart';
+import 'package:cool_flare/provider/asset_flare.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_test/flutter_test.dart';

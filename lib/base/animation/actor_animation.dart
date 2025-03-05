@@ -1,10 +1,10 @@
 // ignore_for_file: prefer_constructors_over_static_methods
-import 'package:flare_flutter/base/actor_artboard.dart';
-import 'package:flare_flutter/base/actor_component.dart';
-import 'package:flare_flutter/base/actor_event.dart';
-import 'package:flare_flutter/base/animation/keyframe.dart';
-import 'package:flare_flutter/base/animation/property_types.dart';
-import 'package:flare_flutter/base/stream_reader.dart';
+import 'package:cool_flare/base/actor_artboard.dart';
+import 'package:cool_flare/base/actor_component.dart';
+import 'package:cool_flare/base/actor_event.dart';
+import 'package:cool_flare/base/animation/keyframe.dart';
+import 'package:cool_flare/base/animation/property_types.dart';
+import 'package:cool_flare/base/stream_reader.dart';
 
 typedef KeyFrame? KeyFrameReader(
     StreamReader reader, ActorComponent? component);

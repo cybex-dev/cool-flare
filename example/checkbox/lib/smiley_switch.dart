@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flare_flutter/flare_actor.dart';
+import 'package:cool_flare/flare_actor.dart';
 
 class SmileySwitch extends StatelessWidget {
   final bool isOn;

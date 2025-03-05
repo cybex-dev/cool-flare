@@ -1,12 +1,12 @@
 import 'dart:math';
 
-import 'package:flare_flutter/base/actor_artboard.dart';
-import 'package:flare_flutter/base/actor_component.dart';
-import 'package:flare_flutter/base/actor_node.dart';
-import 'package:flare_flutter/base/actor_targeted_constraint.dart';
-import 'package:flare_flutter/base/math/mat2d.dart';
-import 'package:flare_flutter/base/stream_reader.dart';
-import 'package:flare_flutter/base/transform_space.dart';
+import 'package:cool_flare/base/actor_artboard.dart';
+import 'package:cool_flare/base/actor_component.dart';
+import 'package:cool_flare/base/actor_node.dart';
+import 'package:cool_flare/base/actor_targeted_constraint.dart';
+import 'package:cool_flare/base/math/mat2d.dart';
+import 'package:cool_flare/base/stream_reader.dart';
+import 'package:cool_flare/base/transform_space.dart';
 
 import 'math/transform_components.dart';
 

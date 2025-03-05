@@ -1,9 +1,9 @@
 import 'dart:collection';
 import 'dart:typed_data';
 
-import 'package:flare_flutter/base/math/mat2d.dart';
-import 'package:flare_flutter/base/math/vec2d.dart';
-import 'package:flare_flutter/base/stream_reader.dart';
+import 'package:cool_flare/base/math/mat2d.dart';
+import 'package:cool_flare/base/math/vec2d.dart';
+import 'package:cool_flare/base/stream_reader.dart';
 
 HashMap<int, PointType> pointTypeLookup =
     HashMap<int, PointType>.fromIterables([

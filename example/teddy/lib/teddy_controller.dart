@@ -1,8 +1,8 @@
 import 'dart:math';
 import 'dart:ui';
 
-import 'package:flare_flutter/flare.dart';
-import 'package:flare_flutter/flare_controls.dart';
+import 'package:cool_flare/flare.dart';
+import 'package:cool_flare/flare_controls.dart';
 
 class TeddyController extends FlareControls {
   // Store a reference to our face control node (the "ctrl_look" node in Flare)

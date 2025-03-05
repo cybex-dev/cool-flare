@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:flare_flutter/asset_provider.dart';
-import 'package:flare_flutter/cache.dart';
+import 'package:cool_flare/asset_provider.dart';
+import 'package:cool_flare/cache.dart';
 
 /// A reference counted asset in a cache.
 abstract class CacheAsset {

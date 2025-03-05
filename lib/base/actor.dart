@@ -3,21 +3,21 @@ import 'dart:convert';
 import 'dart:typed_data';
 
 import 'package:collection/collection.dart';
-import 'package:flare_flutter/base/actor_artboard.dart';
-import 'package:flare_flutter/base/actor_color.dart';
-import 'package:flare_flutter/base/actor_drop_shadow.dart';
-import 'package:flare_flutter/base/actor_ellipse.dart';
-import 'package:flare_flutter/base/actor_image.dart';
-import 'package:flare_flutter/base/actor_inner_shadow.dart';
-import 'package:flare_flutter/base/actor_layer_effect_renderer.dart';
-import 'package:flare_flutter/base/actor_path.dart';
-import 'package:flare_flutter/base/actor_polygon.dart';
-import 'package:flare_flutter/base/actor_rectangle.dart';
-import 'package:flare_flutter/base/actor_shape.dart';
-import 'package:flare_flutter/base/actor_star.dart';
-import 'package:flare_flutter/base/actor_triangle.dart';
-import 'package:flare_flutter/base/block_types.dart';
-import 'package:flare_flutter/base/stream_reader.dart';
+import 'package:cool_flare/base/actor_artboard.dart';
+import 'package:cool_flare/base/actor_color.dart';
+import 'package:cool_flare/base/actor_drop_shadow.dart';
+import 'package:cool_flare/base/actor_ellipse.dart';
+import 'package:cool_flare/base/actor_image.dart';
+import 'package:cool_flare/base/actor_inner_shadow.dart';
+import 'package:cool_flare/base/actor_layer_effect_renderer.dart';
+import 'package:cool_flare/base/actor_path.dart';
+import 'package:cool_flare/base/actor_polygon.dart';
+import 'package:cool_flare/base/actor_rectangle.dart';
+import 'package:cool_flare/base/actor_shape.dart';
+import 'package:cool_flare/base/actor_star.dart';
+import 'package:cool_flare/base/actor_triangle.dart';
+import 'package:cool_flare/base/block_types.dart';
+import 'package:cool_flare/base/stream_reader.dart';
 
 abstract class Actor {
   int maxTextureIndex = 0;

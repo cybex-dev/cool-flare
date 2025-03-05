@@ -1,6 +1,6 @@
-import 'package:flare_flutter/base/animation/interpolation/cubic_ease.dart';
-import 'package:flare_flutter/base/animation/interpolation/interpolator.dart';
-import 'package:flare_flutter/base/stream_reader.dart';
+import 'package:cool_flare/base/animation/interpolation/cubic_ease.dart';
+import 'package:cool_flare/base/animation/interpolation/interpolator.dart';
+import 'package:cool_flare/base/stream_reader.dart';
 
 class CubicInterpolator extends Interpolator {
   late CubicEase _cubic;

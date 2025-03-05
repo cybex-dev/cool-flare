@@ -1,13 +1,13 @@
-import 'package:flare_flutter/base/actor_artboard.dart';
-import 'package:flare_flutter/base/actor_blur.dart';
-import 'package:flare_flutter/base/actor_component.dart';
-import 'package:flare_flutter/base/actor_drawable.dart';
-import 'package:flare_flutter/base/actor_drop_shadow.dart';
-import 'package:flare_flutter/base/actor_inner_shadow.dart';
-import 'package:flare_flutter/base/actor_mask.dart';
-import 'package:flare_flutter/base/actor_node.dart';
-import 'package:flare_flutter/base/actor_shadow.dart';
-import 'package:flare_flutter/base/math/aabb.dart';
+import 'package:cool_flare/base/actor_artboard.dart';
+import 'package:cool_flare/base/actor_blur.dart';
+import 'package:cool_flare/base/actor_component.dart';
+import 'package:cool_flare/base/actor_drawable.dart';
+import 'package:cool_flare/base/actor_drop_shadow.dart';
+import 'package:cool_flare/base/actor_inner_shadow.dart';
+import 'package:cool_flare/base/actor_mask.dart';
+import 'package:cool_flare/base/actor_node.dart';
+import 'package:cool_flare/base/actor_shadow.dart';
+import 'package:cool_flare/base/math/aabb.dart';
 
 void _computeLayerNode(ActorDrawable? drawable) {
   ActorNode? parent = drawable;

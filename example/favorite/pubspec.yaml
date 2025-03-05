@@ -3,14 +3,14 @@ description: A tappable Flare Widget.
 publish_to: 'none'
 
 environment:
-  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+  sdk: ">=2.18.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  flare_flutter:
-    path: ../../flare_flutter
-  cupertino_icons: ^0.1.2
+  cool_flare:
+    path: ../..
+  cupertino_icons: ^1.0.8
 
 dev_dependencies:
   flutter_test:

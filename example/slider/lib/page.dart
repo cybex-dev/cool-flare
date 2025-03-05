@@ -1,15 +1,13 @@
 import 'dart:async';
-import 'dart:ui';
 
+import 'package:cool_flare/flare_actor.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flare_flutter/flare_actor.dart';
 import 'package:slider/house_controller.dart';
 
 class Page extends StatefulWidget {
   final String title;
 
-  Page({this.title, Key key}) : super(key: key);
+  Page({required this.title, super.key});
 
   @override
   _PageState createState() => _PageState();
@@ -17,8 +15,8 @@ class Page extends StatefulWidget {
 
 class _PageState extends State<Page> with SingleTickerProviderStateMixin {
   /// Inactivity [Timer]: if it fires, set the animation state back to "Demo Mode".
-  Timer _currentDemoSchedule;
-  HouseController _houseController;
+  Timer? _currentDemoSchedule;
+  late HouseController _houseController;
 
   @override
   void initState() {
@@ -32,7 +30,7 @@ class _PageState extends State<Page> with SingleTickerProviderStateMixin {
   _scheduleDemo(PointerUpEvent details) {
     if (!_houseController.isDemoMode) {
       if (_currentDemoSchedule != null) {
-        _currentDemoSchedule.cancel();
+        _currentDemoSchedule?.cancel();
       }
       _currentDemoSchedule = Timer(const Duration(seconds: 2), () {
         setState(() {
@@ -83,7 +81,7 @@ class _PageState extends State<Page> with SingleTickerProviderStateMixin {
 
                                 /// Stop a scheduled timer, if any.
                                 if (_currentDemoSchedule != null) {
-                                  _currentDemoSchedule.cancel();
+                                  _currentDemoSchedule?.cancel();
                                   _currentDemoSchedule = null;
                                 }
                               });

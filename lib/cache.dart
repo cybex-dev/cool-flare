@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:flare_flutter/asset_provider.dart';
-import 'package:flare_flutter/cache_asset.dart';
+import 'package:cool_flare/asset_provider.dart';
+import 'package:cool_flare/cache_asset.dart';
 
 typedef CacheAsset AssetFactoryMethod();
 

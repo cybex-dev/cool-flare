@@ -4,12 +4,13 @@
 import 'dart:async';
 import 'dart:math' show Random;
 
+import 'package:cool_flare/base/animation/actor_animation.dart';
+import 'package:cool_flare/flare.dart';
+import 'package:cool_flare/flare_actor.dart';
+import 'package:cool_flare/flare_controller.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'package:flare_flutter/flare.dart';
-import 'package:flare_flutter/flare_actor.dart';
-import 'package:flare_flutter/flare_controller.dart';
 import 'contacts.dart';
 
 class CupertinoRefreshControlDemo extends StatefulWidget {
@@ -22,25 +23,25 @@ class CupertinoRefreshControlDemo extends StatefulWidget {
 
 class _CupertinoRefreshControlDemoState
     extends State<CupertinoRefreshControlDemo> with FlareController {
-  List<List<String>> randomizedContacts;
+  late List<List<String>> randomizedContacts;
 
-  ActorAnimation _loadingAnimation;
-  ActorAnimation _successAnimation;
-  ActorAnimation _pullAnimation;
-  ActorAnimation _cometAnimation;
+  late ActorAnimation _loadingAnimation;
+  late ActorAnimation _successAnimation;
+  late ActorAnimation _pullAnimation;
+  late ActorAnimation _cometAnimation;
 
-  RefreshIndicatorMode _refreshState;
-  double _pulledExtent;
-  double _refreshTriggerPullDistance;
+  late RefreshIndicatorMode _refreshState;
+  late double _pulledExtent;
+  late double _refreshTriggerPullDistance;
   double _successTime = 0.0;
   double _loadingTime = 0.0;
   double _cometTime = 0.0;
 
   void initialize(FlutterActorArtboard actor) {
-    _pullAnimation = actor.getAnimation("pull");
-    _successAnimation = actor.getAnimation("success");
-    _loadingAnimation = actor.getAnimation("loading");
-    _cometAnimation = actor.getAnimation("idle comet");
+    _pullAnimation = actor.getAnimation("pull")!;
+    _successAnimation = actor.getAnimation("success")!;
+    _loadingAnimation = actor.getAnimation("loading")!;
+    _cometAnimation = actor.getAnimation("idle comet")!;
   }
 
   void setViewTransform(Mat2D viewTransform) {}

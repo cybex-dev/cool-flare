@@ -1,6 +1,6 @@
-import 'package:flare_flutter/asset_provider.dart';
-import 'package:flare_flutter/cache.dart';
-import 'package:flare_flutter/flare_cache_asset.dart';
+import 'package:cool_flare/asset_provider.dart';
+import 'package:cool_flare/cache.dart';
+import 'package:cool_flare/flare_cache_asset.dart';
 
 /// Cache for loaded Flare assets.
 final _cache = FlareCache();

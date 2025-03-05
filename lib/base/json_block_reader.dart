@@ -1,4 +1,4 @@
-import 'package:flare_flutter/base/json_reader.dart';
+import 'package:cool_flare/base/json_reader.dart';
 
 class JSONBlockReader extends JSONReader {
   @override

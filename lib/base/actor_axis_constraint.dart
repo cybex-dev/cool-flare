@@ -1,7 +1,7 @@
-import 'package:flare_flutter/base/actor_artboard.dart';
-import 'package:flare_flutter/base/actor_targeted_constraint.dart';
-import 'package:flare_flutter/base/stream_reader.dart';
-import 'package:flare_flutter/base/transform_space.dart';
+import 'package:cool_flare/base/actor_artboard.dart';
+import 'package:cool_flare/base/actor_targeted_constraint.dart';
+import 'package:cool_flare/base/stream_reader.dart';
+import 'package:cool_flare/base/transform_space.dart';
 
 abstract class ActorAxisConstraint extends ActorTargetedConstraint {
   bool _copyX = false;

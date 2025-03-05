@@ -53,10 +53,10 @@ List<List<String>> contacts = <List<String>>[
 
 class ListItem extends StatelessWidget {
   const ListItem({
-    this.name,
-    this.place,
-    this.date,
-    this.called,
+    required this.name,
+    required this.place,
+    required this.date,
+    required this.called,
   });
 
   final String name;

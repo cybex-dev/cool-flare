@@ -1,15 +1,15 @@
 import 'dart:typed_data';
 
-import 'package:flare_flutter/base/actor_artboard.dart';
-import 'package:flare_flutter/base/actor_component.dart';
-import 'package:flare_flutter/base/actor_node.dart';
-import 'package:flare_flutter/base/actor_shape.dart';
-import 'package:flare_flutter/base/actor_skinnable.dart';
-import 'package:flare_flutter/base/math/aabb.dart';
-import 'package:flare_flutter/base/math/mat2d.dart';
-import 'package:flare_flutter/base/math/vec2d.dart';
-import 'package:flare_flutter/base/path_point.dart';
-import 'package:flare_flutter/base/stream_reader.dart';
+import 'package:cool_flare/base/actor_artboard.dart';
+import 'package:cool_flare/base/actor_component.dart';
+import 'package:cool_flare/base/actor_node.dart';
+import 'package:cool_flare/base/actor_shape.dart';
+import 'package:cool_flare/base/actor_skinnable.dart';
+import 'package:cool_flare/base/math/aabb.dart';
+import 'package:cool_flare/base/math/mat2d.dart';
+import 'package:cool_flare/base/math/vec2d.dart';
+import 'package:cool_flare/base/path_point.dart';
+import 'package:cool_flare/base/stream_reader.dart';
 
 abstract class ActorBasePath {
   ActorShape? _shape;

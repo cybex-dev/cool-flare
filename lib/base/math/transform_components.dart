@@ -1,6 +1,6 @@
 import 'dart:typed_data';
 
-import 'package:flare_flutter/base/math/vec2d.dart';
+import 'package:cool_flare/base/math/vec2d.dart';
 
 class TransformComponents {
   final Float32List _buffer;

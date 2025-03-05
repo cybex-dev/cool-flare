@@ -1,7 +1,7 @@
-name: flare_flutter
-description: Vector design and runtime animation for Flutter.
+name: cool_flare
+description: Vector design and runtime animation for Flutter (replacement for flare_flutter).
 version: 3.0.2
-homepage: https://github.com/2d-inc/Flare-Flutter
+homepage: https://github.com/cybex-dev/cool-flare
 
 dependencies:
   collection: ^1.19.0

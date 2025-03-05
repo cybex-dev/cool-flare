@@ -1,8 +1,8 @@
-import 'package:flare_flutter/base/actor_artboard.dart';
-import 'package:flare_flutter/base/actor_bone.dart';
-import 'package:flare_flutter/base/actor_component.dart';
-import 'package:flare_flutter/base/actor_node.dart';
-import 'package:flare_flutter/base/stream_reader.dart';
+import 'package:cool_flare/base/actor_artboard.dart';
+import 'package:cool_flare/base/actor_bone.dart';
+import 'package:cool_flare/base/actor_component.dart';
+import 'package:cool_flare/base/actor_node.dart';
+import 'package:cool_flare/base/stream_reader.dart';
 
 class ActorRootBone extends ActorNode {
   ActorBone? _firstBone;

@@ -1,25 +1,54 @@
-:warning: | Please migrate to the new [Rive Flutter runtime](https://github.com/rive-app/rive-flutter). This runtime is for the old Rive (formerly [Flare](https://flare.rive.app)) and will only receive updates for breaking issues with Flutter and egregious bugs. New features and updates are only planned for the new [Rive](https://rive.app).
-| -- | -- |
+# cool_flare
+Flutter runtime for Flare, depends on flare_dart.
 
-# Rive 1 (previously Flare)
-<img align="right" src="https://cdn.rive.app/flare_macbook.png" height="250">
+**Please note - the origin [author](https://github.com/2d-inc) of the [flare_flutter](https://pub.dev/packages/flare_flutter) hasn't provided updates for an extended period of time.** This package serves to support, and enhance the existing package.
 
-[Rive 1 (previously Flare)](https://flare.rive.app/) offers powerful realtime vector design and animation for app and game designers alike. The primary goal of Flare is to allow designers to work directly with assets that run in their final product, eliminating the need to redo that work in code.
+## Installation
+Add `cool_flare` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/). If you plan on writing a custom controller or want access to more of the guts of the library, you will want to also include `flare_dart` which is the base library responsible for loading, instancing, animating, and doing all the work that happens before rendering in `flare_flutter`. The examples include use cases for both scenarios.
 
-## Null Safety
-Preview of null safety is now available on pub.dev with version 3.0.0. Include it in your pubspec via:
-```
-  dependencies:
-    flare_flutter: ^3.0.0-nullsafety.0
+```dart
+cool_flare: ^3.1.0
 ```
 
-## Packages
-There used to be two Dart packages provided in this repository. [flare_dart](https://pub.dev/packages/flare_dart) is no longer maintained as a separate package, it has now been rolled into [flare_flutter](https://pub.dev/packages/flare_flutter). Please use only [flare_flutter](https://pub.dev/packages/flare_flutter) going forward.
+## Exporting for Flutter
+Export from Flare with the *"Export to Engine"* menu. In the Engine dropdown, choose *Flutter*, and in the Format dropdown your favorite form of compression.
 
-## Examples
-Take a look at the provided [example applications](https://github.com/2d-inc/Flare-Flutter/tree/master/example).
+## Adding Assets
+Once you've exported your file, add the **.flr** file to your project's [Flutter assets](https://flutter.io/assets-and-images/). 
 
-Please note that only the [simple](example/simple), [change_color](example/change_color), and [teddy](example/teddy) have been updated to null safety.
+## Example
+Take a look at the provided [example applications](https://github.com/2d-inc/Flare-Flutter/tree/master/example) for how to use the FlutterActor widget with an exported Flutter character.
+
+## Usage
+The easiest way to get started is by using the provided **FlareActor** widget. This is a stateless Flutter widget that allows for one Flare file with one active animation playing to be embedded in your Flutter App. 
+
+
+You can change the currently playing animation by changing the animation property's name. 
+
+
+You can also specify the mixSeconds to determine how long it takes for the animation to interpolate from the previous one. A value of 0 means that it will just pop to the new animation. A value of 0.5 will mean it takes half of a second to fully mix the new animation on top of the old one.
+
+```
+import 'package:cool_flare/flare_actor.dart';
+class MyHomePage extends StatefulWidget {
+  @override
+  _MyHomePageState createState() => new _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return new FlareActor("assets/Filip.flr", alignment:Alignment.center, fit:BoxFit.contain, animation:"idle");
+  }
+}
+```
+
+## Contributing
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request.
 
 ## License
 See the [LICENSE](LICENSE) file for license rights and limitations (MIT).

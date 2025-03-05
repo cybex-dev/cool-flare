@@ -1,9 +1,9 @@
 import 'dart:math';
 import 'dart:ui';
 
-import 'package:flare_flutter/flare.dart';
-import 'package:flare_flutter/flare_actor.dart';
-import 'package:flare_flutter/flare_controller.dart';
+import 'package:cool_flare/flare.dart';
+import 'package:cool_flare/flare_actor.dart';
+import 'package:cool_flare/flare_controller.dart';
 import 'package:flutter/animation.dart';
 
 typedef void OnUpdated();
@@ -14,14 +14,14 @@ class HouseController extends FlareController {
 
   final OnUpdated demoUpdated;
 
-  HouseController({this.demoUpdated});
+  HouseController({required this.demoUpdated});
 
   bool isDemoMode = true;
   int _rooms = 6;
   double _lastDemoValue = 0.0;
-  FlutterActorArtboard _artboard;
-  FlareAnimationLayer _demoAnimation;
-  FlareAnimationLayer _skyAnimation;
+  late FlutterActorArtboard _artboard;
+  late FlareAnimationLayer _demoAnimation;
+  late FlareAnimationLayer _skyAnimation;
 
   final List<FlareAnimationLayer> _roomAnimations = [];
 
@@ -74,11 +74,11 @@ class HouseController extends FlareController {
   void initialize(FlutterActorArtboard artboard) {
     _artboard = artboard;
     _demoAnimation =
-        FlareAnimationLayer('Demo Mode', _artboard.getAnimation("Demo Mode"));
+        FlareAnimationLayer('Demo Mode', _artboard.getAnimation("Demo Mode")!);
     _skyAnimation =
-        FlareAnimationLayer('Sun Rotate', _artboard.getAnimation("Sun Rotate"))
+        FlareAnimationLayer('Sun Rotate', _artboard.getAnimation("Sun Rotate")!)
           ..mix = 1.0;
-    ActorAnimation endAnimation = artboard.getAnimation("to 6");
+    ActorAnimation endAnimation = artboard.getAnimation("to 6")!;
     if (endAnimation != null) {
       endAnimation.apply(endAnimation.duration, artboard, 1.0);
     }
@@ -94,22 +94,22 @@ class HouseController extends FlareController {
     double demoValue = 0.0;
     if (demoFrame <= 15) {
       demoValue =
-          lerpDouble(6.0, 5.0, Curves.easeInOut.transform(demoFrame / 15));
+          lerpDouble(6.0, 5.0, Curves.easeInOut.transform(demoFrame / 15))!;
     } else if (demoFrame <= 36) {
       demoValue = 5.0;
     } else if (demoFrame <= 50) {
       demoValue = lerpDouble(
-          5.0, 4.0, Curves.easeInOut.transform((demoFrame - 36) / (50 - 36)));
+          5.0, 4.0, Curves.easeInOut.transform((demoFrame - 36) / (50 - 36)))!;
     } else if (demoFrame <= 72) {
       demoValue = 4.0;
     } else if (demoFrame <= 87) {
       demoValue = lerpDouble(
-          4.0, 3.0, Curves.easeInOut.transform((demoFrame - 72) / (87 - 72)));
+          4.0, 3.0, Curves.easeInOut.transform((demoFrame - 72) / (87 - 72)))!;
     } else if (demoFrame <= 128) {
       demoValue = 3.0;
     } else if (demoFrame <= 142) {
       demoValue = lerpDouble(3.0, 6.0,
-          Curves.easeInOut.transform((demoFrame - 128) / (142 - 128)));
+          Curves.easeInOut.transform((demoFrame - 128) / (142 - 128)))!;
     } else if (demoFrame <= 164) {
       demoValue = 6.0;
     }
@@ -127,7 +127,7 @@ class HouseController extends FlareController {
   }
 
   _enqueueAnimation(String name) {
-    ActorAnimation animation = _artboard.getAnimation(name);
+    ActorAnimation animation = _artboard.getAnimation(name)!;
     if (animation != null) {
       _roomAnimations.add(FlareAnimationLayer(name, animation));
     }

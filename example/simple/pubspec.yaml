@@ -4,8 +4,8 @@ description: Simple Flare example.
 dependencies:
   flutter:
     sdk: flutter
-  flare_flutter:
-    path: ../../flare_flutter
+  cool_flare:
+    path: ../..
 
 dev_dependencies:
   flutter_test:
@@ -18,4 +18,4 @@ flutter:
     - assets/
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.18.0 <4.0.0"

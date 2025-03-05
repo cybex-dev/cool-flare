@@ -1,26 +1,26 @@
 import 'dart:collection';
 import 'dart:typed_data';
 
-import 'package:flare_flutter/base/actor_artboard.dart';
-import 'package:flare_flutter/base/actor_blur.dart';
-import 'package:flare_flutter/base/actor_bone_base.dart';
-import 'package:flare_flutter/base/actor_color.dart';
-import 'package:flare_flutter/base/actor_component.dart';
-import 'package:flare_flutter/base/actor_constraint.dart';
-import 'package:flare_flutter/base/actor_drawable.dart';
-import 'package:flare_flutter/base/actor_image.dart';
-import 'package:flare_flutter/base/actor_node.dart';
-import 'package:flare_flutter/base/actor_node_solo.dart';
-import 'package:flare_flutter/base/actor_path.dart';
-import 'package:flare_flutter/base/actor_rectangle.dart';
-import 'package:flare_flutter/base/actor_shadow.dart';
-import 'package:flare_flutter/base/actor_star.dart';
-import 'package:flare_flutter/base/animation/interpolation/cubic.dart';
-import 'package:flare_flutter/base/animation/interpolation/hold.dart';
-import 'package:flare_flutter/base/animation/interpolation/interpolator.dart';
-import 'package:flare_flutter/base/animation/interpolation/linear.dart';
-import 'package:flare_flutter/base/path_point.dart';
-import 'package:flare_flutter/base/stream_reader.dart';
+import 'package:cool_flare/base/actor_artboard.dart';
+import 'package:cool_flare/base/actor_blur.dart';
+import 'package:cool_flare/base/actor_bone_base.dart';
+import 'package:cool_flare/base/actor_color.dart';
+import 'package:cool_flare/base/actor_component.dart';
+import 'package:cool_flare/base/actor_constraint.dart';
+import 'package:cool_flare/base/actor_drawable.dart';
+import 'package:cool_flare/base/actor_image.dart';
+import 'package:cool_flare/base/actor_node.dart';
+import 'package:cool_flare/base/actor_node_solo.dart';
+import 'package:cool_flare/base/actor_path.dart';
+import 'package:cool_flare/base/actor_rectangle.dart';
+import 'package:cool_flare/base/actor_shadow.dart';
+import 'package:cool_flare/base/actor_star.dart';
+import 'package:cool_flare/base/animation/interpolation/cubic.dart';
+import 'package:cool_flare/base/animation/interpolation/hold.dart';
+import 'package:cool_flare/base/animation/interpolation/interpolator.dart';
+import 'package:cool_flare/base/animation/interpolation/linear.dart';
+import 'package:cool_flare/base/path_point.dart';
+import 'package:cool_flare/base/stream_reader.dart';
 
 HashMap<int, InterpolationTypes> interpolationTypesLookup =
     HashMap<int, InterpolationTypes>.fromIterables([

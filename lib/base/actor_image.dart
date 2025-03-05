@@ -1,12 +1,12 @@
 import 'dart:typed_data';
 
-import 'package:flare_flutter/base/actor_artboard.dart';
-import 'package:flare_flutter/base/actor_component.dart';
-import 'package:flare_flutter/base/actor_drawable.dart';
-import 'package:flare_flutter/base/actor_skinnable.dart';
-import 'package:flare_flutter/base/math/aabb.dart';
-import 'package:flare_flutter/base/math/mat2d.dart';
-import 'package:flare_flutter/base/stream_reader.dart';
+import 'package:cool_flare/base/actor_artboard.dart';
+import 'package:cool_flare/base/actor_component.dart';
+import 'package:cool_flare/base/actor_drawable.dart';
+import 'package:cool_flare/base/actor_skinnable.dart';
+import 'package:cool_flare/base/math/aabb.dart';
+import 'package:cool_flare/base/math/mat2d.dart';
+import 'package:cool_flare/base/stream_reader.dart';
 
 class ActorImage extends ActorDrawable with ActorSkinnable {
   @override

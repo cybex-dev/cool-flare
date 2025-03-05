@@ -1,6 +1,6 @@
 import 'dart:typed_data';
 
-import 'package:flare_flutter/base/binary_reader.dart';
+import 'package:cool_flare/base/binary_reader.dart';
 
 class BlockReader extends BinaryReader {
   @override

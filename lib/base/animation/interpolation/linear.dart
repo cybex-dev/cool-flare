@@ -1,4 +1,4 @@
-import 'package:flare_flutter/base/animation/interpolation/interpolator.dart';
+import 'package:cool_flare/base/animation/interpolation/interpolator.dart';
 
 class LinearInterpolator extends Interpolator {
   static Interpolator get instance => _instance;
